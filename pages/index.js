@@ -1,24 +1,25 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Navigation from '../components/navigation'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.min.js" integrity="sha512-Q+IG0h7As6sfqE2t1Xf5IeamNyCXb4EXxGCA9Mlbpv7xtwurVHNdVDbyWeSQ3ulPf2FRlqeu77Ec3SJDdIR63w==" crossorigin="anonymous"></script>
       </Head>
 
+<Navigation/>
       <main className={styles.main}>
+
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Concert Hub
         </h1>
-
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Experience live concerts by your favorite performers from anywhere!
         </p>
-
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
@@ -47,6 +48,9 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+        <div className="iframe-wrap">
+          <iframe src="https://hubs.mozilla.com/XAVmfKm/vital-vivid-meet?embed_token=b381fb1def3185e0580276ec886318a0" allow="microphone; camera; vr; speaker;"></iframe>
+        </div>
         </div>
       </main>
 

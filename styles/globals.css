@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+h1{
+  margin-bottom: 2rem !important;
+}
